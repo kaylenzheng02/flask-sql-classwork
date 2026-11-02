@@ -18,39 +18,5 @@
     <a class="feature-card" href="{{ url_for('cats') }}"><span class="feature-icon" aria-hidden="true">🐈</span><div><h3>Available cats</h3><p>Curious explorers, quiet company, and a little extra purr.</p><span class="text-link">Explore our cats →</span></div></a>
   </div>
 </section>
-<section class="section" aria-label="Available dogs">
-  <h2>Available dogs</h2>
-  {% if dogs %}
-  <div class="animal-grid">
-    {% for dog in dogs %}
-    <article class="animal-card">
-      <h3>{{ dog['name'] }}</h3>
-      <p><span class="animal-tag">{{ dog['breed'] }}</span></p>
-      <p><strong>Age:</strong> {{ dog['age'] }} {{ 'year' if dog['age'] == 1 else 'years' }}</p>
-      <p>{{ dog['description'] }}</p>
-    </article>
-    {% endfor %}
-  </div>
-  {% else %}
-  <p>Our dog listings are being updated. Please check back soon.</p>
-  {% endif %}
-</section>
-<section class="section" aria-label="Available cats">
-  <h2>Available cats</h2>
-  {% if cats %}
-  <div class="animal-grid">
-    {% for cat in cats %}
-    <article class="animal-card">
-      <h3>{{ cat['name'] }}</h3>
-      <p><span class="animal-tag">{{ cat['breed'] }}</span></p>
-      <p><strong>Age:</strong> {{ cat['age'] }} {{ 'year' if cat['age'] == 1 else 'years' }}</p>
-      <p>{{ cat['description'] }}</p>
-    </article>
-    {% endfor %}
-  </div>
-  {% else %}
-  <p>Our cat listings are being updated. Please check back soon.</p>
-  {% endif %}
-</section>
 <section class="welcome-note"><h2>A home starts with a hello.</h2><p>Browse the available animals and learn about their personalities. Finding a friend begins with getting to know them.</p></section>
 {% endblock %}
