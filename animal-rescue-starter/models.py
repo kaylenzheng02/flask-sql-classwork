@@ -13,8 +13,10 @@ def query(sql, values=()):
 
 
 def get_dogs():
-    return query("SELECT id, name, age, breed, description FROM dogs ORDER BY name")
+    rows = query ("SELECT * FROM dogs ORDER BY name")
+    return rows
 
 
 def get_cats():
-    return query("SELECT id, name, age, breed, description FROM cats ORDER BY name")
+    rows = query("SELECT * FROM cats ORDER BY name")
+    return rows
