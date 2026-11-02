@@ -6,11 +6,11 @@
 -- Running this file again will run your INSERT statements again too.
 
 INSERT INTO dogs (name, age, breed, description) VALUES
-    ('Biscuit', 3, 'Labrador Retriever', 'hungry.'),
-    ('Juniper', 6, 'Border Collie', 'hungry.'),
-    ('Waffles', 1, 'Beagle Mix', 'hungry');
+    ('Biscuit', 1, 'Labrador Retriever', 'hungry.'),
+    ('Juniper', 2, 'Border Collie', 'hungry.'),
+    ('Waffles', 3, 'Beagle Mix', 'hungry');
 
 INSERT INTO cats (name, age, breed, description) VALUES
-    ('Mochi', 2, 'Domestic Shorthair', 'hungry'),
-    ('Pepper', 8, 'Siamese', 'hungry'),
-    ('Clementine', 4, 'Maine Coon', 'hungry.');
+    ('Mochi', 1, 'Domestic Shorthair', 'hungry'),
+    ('Pepper', 2, 'Siamese', 'hungry'),
+    ('Clementine', 3, 'Maine Coon', 'hungry.');
