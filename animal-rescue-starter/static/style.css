@@ -28,6 +28,7 @@ h3 { font-size: 1.3rem; margin: 0 0 10px; }
 .art-caption { position: absolute; bottom: 24px; font-family: Georgia, serif; font-style: italic; font-size: 1.2rem; }
 .section { padding: 24px 0 48px; }
 .feature-grid, .animal-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.animal-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
 .feature-card, .animal-card { background: white; border: 1px solid var(--line); border-radius: 12px; padding: 28px; }
 .feature-card { display: flex; align-items: start; gap: 20px; text-decoration: none; }
 .feature-card:hover { border-color: var(--accent); }
@@ -43,6 +44,10 @@ h3 { font-size: 1.3rem; margin: 0 0 10px; }
 .empty-state h2 { font-size: 1.7rem; margin: 18px 0 12px; }
 .animal-card h2 { font-size: 1.8rem; margin: 0 0 12px; }
 .animal-card img { display: block; width: 100%; height: 230px; object-fit: cover; border-radius: 8px; margin-bottom: 16px; }
+.animal-card { transition: transform .2s ease, box-shadow .2s ease; }
+.animal-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(36, 62, 53, .12); }
+@media (prefers-reduced-motion: reduce) { .animal-card { transition: none; } .animal-card:hover { transform: none; } }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .animal-tag { display: inline-block; font-size: .8rem; padding: 4px 10px; border-radius: 20px; background: var(--sage); }
 .site-footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 26px 0; font-size: .8rem; border-top: 1px solid var(--line); }
 .skip-link { position: absolute; left: 16px; top: -80px; background: white; padding: 8px; }

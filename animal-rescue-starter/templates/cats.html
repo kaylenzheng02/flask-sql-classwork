@@ -8,8 +8,7 @@
     {% for cat in cats %}
     <article class="animal-card">
       <h2>{{ cat['name'] }}</h2>
-      <p><span class="animal-tag">{{ cat['breed'] }}</span></p>
-      <p><strong>Age:</strong> {{ cat['age'] }} {{ 'year' if cat['age'] == 1 else 'years' }}</p>
+      <p class="tags"><span class="animal-tag">{{ cat['breed'] }}</span><span class="animal-tag">{{ cat['age'] }} {{ 'year' if cat['age'] == 1 else 'years' }} old</span></p>
       <p>{{ cat['description'] }}</p>
     </article>
     {% endfor %}
