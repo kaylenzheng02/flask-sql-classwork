@@ -38,7 +38,7 @@ Here's what happens when you open `/dogs`:
    `SELECT * FROM dogs ORDER BY name` and hands back the rows.
    Each row works kind of like a dictionary, so you can grab `dog['name']` and so on.
 4. `app.py` passes those rows to `templates/dogs.html`.
-5. In the template, `{% for dog in dogs %}` makes one card per dog with the name,
+5. In the template, a `for dog in dogs` loop makes one card per dog with the name,
    breed and age tags, and the description. If there aren't any dogs, you get the
    "listings are being updated" message instead.
 
